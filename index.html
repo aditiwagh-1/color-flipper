@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,6 +23,7 @@
 
         }
     </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <h2>Color Flipper </h2>
@@ -31,5 +32,56 @@
     <button id="red" onClick ="setColor('red')">Red</button>
     <button id="random" onClick="randomColor()">Random</button>
     <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Flipper</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen flex flex-col items-center justify-center gap-4 bg-gray-100">
+
+  <h2 class="text-3xl font-semibold text-gray-800 mb-4">
+    Color Flipper
+  </h2>
+
+  <button
+    onclick="setColor('green')"
+    class="w-72 h-12 rounded bg-green-500 text-white hover:bg-green-600 transition"
+  >
+    Green
+  </button>
+
+  <button
+    onclick="setColor('blue')"
+    class="w-72 h-12 rounded bg-blue-500 text-white hover:bg-blue-600 transition"
+  >
+    Blue
+  </button>
+
+  <button
+    onclick="setColor('red')"
+    class="w-72 h-12 rounded bg-red-500 text-white hover:bg-red-600 transition"
+  >
+    Red
+  </button>
+
+  <button
+    onclick="randomColor()"
+    class="w-72 h-12 rounded bg-black text-white hover:bg-gray-800 transition"
+  >
+    Random
+  </button>
+
+  <script src="script.js"></script>
 </body>
 </html>
